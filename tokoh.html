@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahlawan Perang Aceh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('/api/placeholder/1600/900');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-emerald-900 via-teal-900 to-gray-900 text-white">
+    <nav class="bg-black/30 backdrop-blur-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-emerald-400">Pahlawan Aceh</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="hover:text-emerald-400 transition">Beranda</a>
+                    <a href="#pahlawan" class="hover:text-emerald-400 transition">Tokoh</a>
+                    <a href="warisan.html" class="hover:text-emerald-400 transition">Warisan</a>
+                    <a href="kronologi.html" class="hover:text-emerald-400 transition">Kronologi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="beranda" class="hero-gradient min-h-screen flex items-center">
+        <div class="container mx-auto px-6 py-24">
+            <div class="max-w-3xl">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 text-shadow">
+                    Tokoh Pejuang<br/>
+                    <span class="text-emerald-400">Perang Aceh</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-300">
+                    Mengenal para pahlawan yang berjuang mempertahankan Kesultanan Aceh dari penjajahan Belanda.
+                </p>
+                <a href="index.html" class="bg-emerald-500 hover:bg-emerald-600 px-8 py-3 rounded-full font-medium transition-all duration-300 inline-block">
+                    Kembali
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="pahlawan" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-shadow">Tokoh-Tokoh Pejuang</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/teuku umar.jpg" alt="Teuku Umar" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Teuku Umar</h3>
+                    <p class="text-gray-300 mb-4">
+                        Panglima perang Aceh yang terkenal dengan strategi perang gerilyanya. Beliau berhasil menipu Belanda dengan berpura-pura menyerah sebelum berbalik menyerang.
+                    </p>
+                </div>
+
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/Cut Nyak Dhien Pahlawan Wanita Dari Aceh.jpg" alt="Cut Nyak Dhien" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Cut Nyak Dhien</h3>
+                    <p class="text-gray-300 mb-4">
+                        Pahlawan perempuan yang melanjutkan perjuangan suaminya, Teuku Umar. Meski dalam kondisi tua dan buta, tetap memimpin pasukan melawan Belanda.
+                    </p>
+                </div>
+
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/teungkuchikditiro.jpg" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Teuku Cik Di Tiro</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1873 hingga 1905  
+                        Teuku Cik Di Tiro adalah pemimpin yang memimpin perjuangan Aceh dari 1873, dan meskipun ia sempat pergi ke luar negeri,
+                         ia tetap menjadi simbol perlawanan hingga perlawanan besar berakhir pada 1905.
+                     </p>
+                </div>
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/soekarno.webp" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Sultan Alauddin Mahmud Syah</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1873 hingga 1874  
+                     Sultan Alauddin Mahmud Syah memimpin Aceh saat Perang Aceh dimulai pada 1873, tetapi ia menyerah kepada Belanda pada tahun 1874 setelah kondisi kerajaan Aceh semakin terdesak.
+                    </p>
+                </div>
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/Cut_Nyak_Meutia.jpg" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Cut Meutia</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1890-an hingga 1910  
+                        Cut Meutia aktif dalam perlawanan sejak akhir 1890-an, memimpin pasukan dalam pertempuran melawan Belanda,
+                         dan berlanjut hingga ia ditangkap pada 1910.
+                    </p>
+                </div>
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/Generaal_Kohler_(cropped).jpg" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Jenderal Johan Harmen Rudolf Köhler</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1870-an hingga 1880-an  
+                        Jenderal Köhler bertugas dalam Perang Aceh pada 1870-an dan 1880-an, khususnya memimpin serangan terhadap pasukan Aceh di awal-awal perang.
+                    </p>
+                </div>
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/Joannes_Benedictus_van_Heutsz_Hannke_1908.jpg" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Jenderal van Heutsz</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1890-an hingga 1903  
+                        Jenderal van Heutsz menjadi terkenal selama tahun 1890-an dan 1900-an. 
+                        Ia memimpin Belanda dalam ofensif besar dan berhasil menaklukkan Aceh pada 1903.
+                    </p>
+                </div>
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/60370267955e5.jpeg" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Rijko (Rijks-) Hoofd van de Maatschappij van Nederlands-Indië</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1870-an hingga 1900-an  
+                        Pejabat administrasi Belanda yang terlibat dalam pengelolaan dan penindasan di Aceh pada masa-masa awal Perang Aceh hingga awal 1900-an.
+                    </p>
+                </div>
+                <div class="bg-black/30 rounded-xl p-6 card-hover backdrop-blur-sm border border-emerald-900/30">
+                    <img src="img/janvan.jpg" alt="Sultan Iskandar Muda" class="w-full h-64 object-cover rounded-lg mb-6">
+                    <h3 class="text-2xl font-bold mb-3 text-emerald-400">Jan van Swieten</h3>
+                    <p class="text-gray-300 mb-4">
+                        Tahun terlibat: 1873 
+                        Ekspedisi kedua yang terdiri dari 13.000 tentara dipimpin oleh Jenderal Jan van Swieten dikirim ke Aceh.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="sejarah" class="py-20 bg-black/30">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-shadow">Garis Waktu Perjuangan</h2>
+            
+            <div class="max-w-4xl mx-auto relative">
+                <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-emerald-500/30"></div>
+                <div class="space-y-12">
+                    <div class="flex items-center justify-end md:justify-between">
+                        <div class="hidden md:block w-5/12"></div>
+                        <div class="w-2 h-2 bg-emerald-500 rounded-full z-10"></div>
+                        <div class="w-5/12 bg-black/40 p-6 rounded-xl ml-6 backdrop-blur-sm border border-emerald-900/30">
+                            <h3 class="text-xl font-bold text-emerald-400 mb-2">1873</h3>
+                            <p class="text-gray-300">Awal mula Perang Aceh dengan serangan pertama Belanda</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-start md:justify-between">
+                        <div class="w-5/12 bg-black/40 p-6 rounded-xl mr-6 backdrop-blur-sm border border-emerald-900/30">
+                            <h3 class="text-xl font-bold text-emerald-400 mb-2">1899</h3>
+                            <p class="text-gray-300">Gugurnya Teuku Umar dalam pertempuran di Meulaboh</p>
+                        </div>
+                        <div class="w-2 h-2 bg-emerald-500 rounded-full z-10"></div>
+                        <div class="hidden md:block w-5/12"></div>
+                    </div>
+
+                    <div class="flex items-center justify-end md:justify-between">
+                        <div class="hidden md:block w-5/12"></div>
+                        <div class="w-2 h-2 bg-emerald-500 rounded-full z-10"></div>
+                        <div class="w-5/12 bg-black/40 p-6 rounded-xl ml-6 backdrop-blur-sm border border-emerald-900/30">
+                            <h3 class="text-xl font-bold text-emerald-400 mb-2">1905</h3>
+                            <p class="text-gray-300">Penangkapan Cut Nyak Dhien setelah bertahun-tahun bergerilya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeri" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16 text-shadow">Galeri Sejarah</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <img src="img/60370267955e5.jpeg" alt="Galeri 1" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/Cut Nyak Dhien Pahlawan Wanita Dari Aceh.jpg" alt="Galeri 2" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/Cut_Nyak_Meutia.jpg" alt="Galeri 3" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/Generaal_Kohler_(cropped).jpg" alt="Galeri 4" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/janvan.jpg" alt="Galeri 4" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/teungkuchikditiro.jpg" alt="Galeri 4" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/soekarno.webp" alt="Galeri 4" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+                <img src="img/teuku umar.jpg" alt="Galeri 4" class="w-full h-48 object-cover rounded-lg hover:opacity-75 transition">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black/50 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-emerald-400 mb-4">Pahlawan Aceh</h3>
+                    <p class="text-gray-400">Mengenang dan menghormati perjuangan para pahlawan Aceh dalam mempertahankan tanah airnya.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#beranda" class="hover:text-emerald-400 transition">Beranda</a></li>
+                        <li><a href="#pahlawan" class="hover:text-emerald-400 transition">Tokoh</a></li>
+                        <li><a href="#sejarah" class="hover:text-emerald-400 transition">Sejarah</a></li>
+                        <li><a href="#galeri" class="hover:text-emerald-400 transition">Galeri</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">Hubungi Kami</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Email: info@pahlawanaceh.id</li>
+                        <li>Telepon: (021) 1234567</li>
+                        <li>Alamat: Museum Aceh, Banda Aceh</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Pahlawan Aceh. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

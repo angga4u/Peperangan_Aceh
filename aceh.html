@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Sejarah Dunia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(225deg, 
+                #000000 0%,
+                #1e0f3d 25%, 
+                #2d1b46 50%,
+                #481b6e 75%,
+                #2d1b46 100%);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 30%, rgba(236, 72, 153, 0.15) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 10px rgba(124, 58, 237, 0.5),
+                         0 0 20px rgba(124, 58, 237, 0.3),
+                         0 0 30px rgba(124, 58, 237, 0.2);
+        }
+
+        .table-hover-effect:hover {
+            background: linear-gradient(45deg, rgba(124, 58, 237, 0.1), rgba(236, 72, 153, 0.1));
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+        .timeline-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+        }
+
+        .history-icon {
+            font-size: 2rem;
+            background: linear-gradient(45deg, #f472b6, #8b5cf6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-gradient-to-r from-violet-900 via-fuchsia-900 to-violet-900 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="#" class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 neon-text">Peperangan Aceh</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-gray-300 hover:text-fuchsia-400 transition duration-300">Beranda</a></li>
+                <li><a href="tokoh.html" class="text-gray-300 hover:text-fuchsia-400 transition duration-300">Tokoh</a></li>
+                <li><a href="warisan.html" class="text-gray-300 hover:text-fuchsia-400 transition duration-300">Warisan</a></li>
+                <li><a href="kronologi.html" class="text-gray-300 hover:text-fuchsia-400 transition duration-300">Kronologi</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="h-screen bg-cover bg-center relative" style="background-image: url('https://source.unsplash.com/1600x900/?history');">
+        <div class="absolute inset-0 bg-gradient-to-br from-violet-900/90 via-fuchsia-900/80 to-black/70"></div>
+        <div class="relative h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-4 neon-text animate-pulse">Latar Belakang Peperangan Aceh</h1>
+            <p class="text-lg text-gray-200 mb-8">Memahami dan Mempelajari Latar Belakang Peperangan Aceh.</p>
+            <a href="index.html" class="px-8 py-4 bg-gradient-to-r from-fuchsia-500 to-violet-500 text-white font-bold rounded-full shadow-lg hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300 transform hover:scale-105">Kembali</a>
+        </div>
+    </header>
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-12 text-center neon-text">
+                Latar Belakang
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="timeline-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="history-icon mr-3">🏛️</span>
+                        <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                            1. Kepentingan Kolonial Belanda
+                        </h3>
+                    </div>
+                    <div class="space-y-4 text-gray-300">
+                        <p>Belanda ingin memperluas pengaruh dan kontrolnya di seluruh Nusantara, termasuk Aceh, untuk memastikan stabilitas kekuasaan kolonial mereka.
+                         Aceh yang strategis di ujung utara Sumatra menjadi sangat penting karena menguasai jalur perdagangan Selat Malaka.
+                        </p>
+                        <button class="mt-4 px-4 py-2 bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-lg text-white hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="history-icon mr-3">⚔️</span>
+                        <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                            2. Kekayaan Alam Aceh
+                        </h3>
+                    </div>
+                    <div class="space-y-4 text-gray-300">
+                        <p>Aceh memiliki sumber daya alam yang melimpah, termasuk lada dan hasil bumi lainnya, yang menjadi komoditas ekspor utama. 
+                            Belanda ingin menguasai perdagangan ini untuk mendukung perekonomian kolonial mereka.
+                        </p>
+                        <button class="mt-4 px-4 py-2 bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-lg text-white hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="history-icon mr-3">🌍</span>
+                        <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                            3. Perjanjian Siak 1858
+                        </h3>
+                    </div>
+                    <div class="space-y-4 text-gray-300">
+                        <p>Dalam Perjanjian Siak, Kesultanan Siak menyerahkan wilayah kekuasaannya kepada Belanda, yang di antaranya 
+                            termasuk beberapa wilayah yang diklaim oleh Aceh. Hal ini menimbulkan ketegangan antara Aceh dan Belanda.
+                        </p>
+                        </ul>
+                        <button class="mt-4 px-4 py-2 bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-lg text-white hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="timeline-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="history-icon mr-3">🏰</span>
+                        <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                            4. Khawatir akan Campur Tangan Asing
+                        </h3>
+                    </div>
+                    <div class="space-y-4 text-gray-300">
+                        <p>Pada pertengahan abad ke-19, Aceh menjalin hubungan diplomatik dengan kekuatan asing seperti Inggris, Prancis, 
+                            dan Amerika Serikat. Belanda khawatir hubungan ini akan mengancam dominasi mereka di wilayah tersebut.
+                        </p>
+                        <button class="mt-4 px-4 py-2 bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-lg text-white hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="history-icon mr-3">⚡</span>
+                        <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                            5.Perbedaan Ideologi dan Agama
+
+                        </h3>
+                    </div>
+                    <div class="space-y-4 text-gray-300">
+                        <p>Aceh merupakan pusat Islam yang kuat, dan semangat jihad memainkan peran penting dalam menentang kekuasaan kolonial Belanda. 
+                            Perbedaan agama dan ideologi ini memperkuat tekad rakyat Aceh untuk melawan penjajahan.
+                        </p>
+                        <button class="mt-4 px-4 py-2 bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-lg text-white hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-card rounded-xl p-6">
+                    <div class="flex items-center mb-4">
+                        <span class="history-icon mr-3">⚖️</span>
+                        <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300">
+                            6.Ultimatum Belanda
+                        </h3>
+                    </div>
+                    <div class="space-y-4 text-gray-300">
+                        <p>Belanda memberikan ultimatum kepada Aceh pada tahun 1873, menuntut penyerahan diri kepada pemerintahan kolonial. 
+                            Ketika Aceh menolak, Belanda melancarkan serangan militer, yang menandai dimulainya Perang Aceh.
+                        </p>
+                        <button class="mt-4 px-4 py-2 bg-gradient-to-r from-fuchsia-500 to-violet-500 rounded-lg text-white hover:from-fuchsia-600 hover:to-violet-600 transition-all duration-300">
+                            Pelajari Lebih Lanjut
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 timeline-card rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-6 text-center">
+                    Akibat Latar Belakang Ini
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-4 rounded-lg glass-effect">
+                        <h4 class="text-fuchsia-300 font-semibold mb-2">1</h4>
+                        <p class="text-gray-300">Konflik ini menjadi salah satu perang kolonial paling sengit dan memakan waktu lama. Perlawanan rakyat Aceh, yang 
+                            dipimpin oleh tokoh-tokoh seperti Teuku Umar, Cut Nyak Dien, dan Panglima Polim, berlangsung gigih meskipun Belanda menggunakan berbagai taktik untuk mematahkan semangat perjuangan.
+                        </p>
+                    </div>
+                    <div class="p-4 rounded-lg glass-effect">
+                        <h4 class="text-fuchsia-300 font-semibold mb-2">2</h4>
+                        <p class="text-gray-300">Perang Aceh mengakibatkan kehancuran ekonomi, kerusakan sosial, penurunan pengaruh politik Sultan, dan penguatan identitas Islam di Aceh; 
+                            bagi Belanda, perang ini menguras biaya besar, memaksa penggunaan taktik baru, dan mencoreng legitimasi internasional, sementara bagi Nusantara, semangat perlawanan Aceh menjadi inspirasi perjuangan melawan penjajahan.</p>
+                    </div>
+                    <div class="p-4 rounded-lg glass-effect">
+                        <h4 class="text-fuchsia-300 font-semibold mb-2">3</h4>
+                        <p class="text-gray-300">Perang Aceh berdampak pada kehancuran ekonomi dan sosial di Aceh, melemahkan kekuasaan tradisional Sultan, memperkuat semangat Islam, 
+                            menimbulkan kerugian besar bagi Belanda yang memaksa mereka menerapkan strategi baru, sekaligus memotivasi daerah lain di Nusantara untuk melawan penjajahan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="main-content" class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 to-violet-300 mb-8 neon-text">Sejarah Dunia dalam Tabel</h2>
+            
+            <div class="overflow-x-auto shadow-lg rounded-lg">
+                <table class="min-w-full glass-effect text-left rounded-lg border-separate border-spacing-0">
+                    <thead>
+                        <tr class="text-xl text-gray-100">
+                            <th class="py-4 px-6 bg-gradient-to-r from-violet-900 to-fuchsia-900 text-pink-300 rounded-tl-lg">Nama Perang</th>
+                            <th class="py-4 px-6 bg-gradient-to-r from-violet-900 to-fuchsia-900 text-pink-300">Peristiwa Singkat</th>
+                            <th class="py-4 px-6 bg-gradient-to-r from-violet-900 to-fuchsia-900 text-pink-300 rounded-tr-lg">Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-lg text-gray-300">
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Invasi Pertama</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Belanda melancarkan serangan pertama ke Aceh, tetapi gagal karena perlawanan kuat dan gugurnya Köhler.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1873</td>
+                        </tr>
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Invasi Kedua</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Belanda berhasil menduduki Kutaraja (Banda Aceh) dan menyatakan Aceh sebagai bagian Hindia Belanda.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1874</td>
+                        </tr>
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Perang Gerilya</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Perlawanan rakyat Aceh berubah menjadi perang gerilya yang dipimpin ulama seperti Teungku Chik di Tiro.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1874–1904</td>
+                        </tr>
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Perang Teuku Umar</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Teuku Umar memimpin serangan besar terhadap Belanda setelah berpura-pura bekerja sama dengan mereka.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1896–1899</td>
+                        </tr>
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Perlawanan Cut Nyak Dien</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Cut Nyak Dien melanjutkan perjuangan dengan taktik gerilya setelah gugurnya Teuku Umar.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1899–1901</td>
+                        </tr>
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Penangkapan Cut Nyak Dien</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Belanda menangkap Cut Nyak Dien, menandai melemahnya perlawanan besar di Aceh.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1901</td>
+                        </tr>
+                        <tr class="table-hover-effect">
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Akhir Perlawanan Resmi</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">Belanda mengklaim kemenangan atas Aceh setelah perang panjang dan melelahkan.</td>
+                            <td class="py-4 px-6 border-t border-fuchsia-800/20">1901</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+<footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-xl font-bold mb-2">Sejarah Dunia</h3>
+                <p class="text-gray-300">Menjelajahi perjalanan peradaban manusia melalui berbagai era.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Menu Cepat</h3>
+                <ul>
+                    <li><a href="#" class="text-gray-300 hover:underline">Tentang Kami</a></li>
+                    <li><a href="#" class="text-gray-300 hover:underline">Artikel Terbaru</a></li>
+                    <li><a href="#" class="text-gray-300 hover:underline">Galeri Foto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Sumber Daya</h3>
+                <ul>
+                    <li><a href="#" class="text-gray-300 hover:underline">E-Book Gratis</a></li>
+                    <li><a href="#" class="text-gray-300 hover:underline">Video Pembelajaran</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-2">Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Email Anda" class="w-full px-4 py-2 mb-2 bg-blue-800 border border-blue-700 rounded-lg focus:outline-none">
+                    <button class="w-full px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-lg transition">Berlangganan</button>
+                </form>
+            </div>
+        </div>
+        <div class="border-t border-blue-800 my-4"></div>
+        <div class="text-center text-gray-300 text-sm">
+            <p>&copy; 2024 Sejarah Dunia. Hak Cipta Dilindungi.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="hover:underline">Kebijakan Privasi</a>
+                <a href="#" class="hover:underline">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
